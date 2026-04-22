@@ -1,0 +1,31 @@
+Running our C++ IPOPT optimizer (qSlicerIpoptOptimizer)...
+  Done in 286.9s  |  success=True  |  f=0.104833
+
+Running pyRadPlan scipy solver (L-BFGS-B)...
+  Done in 214.8s  |  success=False  |  f=0.101948
+
+Mean dose summary (Gy):
+Structure                               pyRadPlan  Our C++ IPOP      diff
+------------------------------------------------------------------------
+CTV High                                   67.720        67.958    0.2378
+CTV Intermediate 10 mm                     61.006        61.125    0.1188
+CTV Low Shrunk 10 mm                       55.412        55.483    0.0713
+Parotid (L)                                 0.077         0.078    0.0008
+Parotid (R)                                14.946        14.947    0.0010
+SMG (L)                                     5.062         4.975    0.0868
+SMG (R)                                    32.285        32.663    0.3779
+SCM                                        35.435        35.177    0.2577
+MCM                                        11.338        11.415    0.0764
+MCI                                         5.221         5.257    0.0356
+MCRico                                      1.540         1.591    0.0507
+Oesophagus                                  1.052         1.060    0.0085
+Larynx                                      7.104         7.194    0.0900
+Oral Cavity                                14.572        14.298    0.2741
+Patient                                     2.306         2.277    0.0291
+CTV High Ring 0-10 mm Outside              51.184        50.878    0.3063
+CTV Combined Ring 0-10 mm                  34.149        33.949    0.1999
+CTV Combined Ring 10-15 mm                 14.294        14.095    0.1984
+Spinal Cord                                 1.308         1.201    0.1067
+Brainstem                                   0.713         0.725    0.0122
+CTV Combined Ring 15-25 mm                  6.305         6.131    0.1736
+CTV Combined Ring 25-35 mm                  3.016         2.898    0.1188
